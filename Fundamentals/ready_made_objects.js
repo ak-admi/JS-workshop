@@ -1,0 +1,12 @@
+console.log(document.title);
+console.log(document.doctype);
+console.log(document.lastModified);
+var pageHeadEle = document.getElementById('page-heading');
+console.log(pageHeadEle);
+console.log(pageHeadEle.innerHTML);
+console.log(Math.PI);
+console.log( Math.random());
+console.log(Math.random());
+console.log(Math.round(10.5));
+console.log(Math.ceil(10.5));
+console.log(Math.floor(Math.random() * 6) + 1);

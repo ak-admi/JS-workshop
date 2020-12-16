@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    
+        <h1>This is To Do List shuffle using frameworks</h1>
+    
+
+</head>
+<body>
+    <ol id="todo-list"></ol>
+    <button id="shuffle"> shuffle</button>
+</body><style  >        body {
+    background-color:rgb(37, 37, 37);
+    color:aliceblue;
+    padding:2rem;
+    margin:0;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 12px;
+}
+h1 {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 2.8rem;
+    color: cornflowerblue;
+    margin:0;
+}
+ol {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.6rem;
+}
+button{
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    cursor:pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 1rem 1.22rem;
+    text-align: center;
+    text-decoration: none;
+}
+#shuffle-button{
+    border-radius: 1.2rem;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+}</style> 
+<script src="TodoFrameworks.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>"
+<script>
+    const fadeButton=$('#shuffle');
+    const fadeContent=$('#todo-list');
+    fadeButton.on('click',function(){
+        fadeContent.fadeToggle();
+    });
+</script>

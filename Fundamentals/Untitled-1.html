@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>console.log("1st js");</script>
+    <meta charset="utf-8">
+    <title>JavaScript Execution Order</title>
+</head>
+<body>
+    <ul id="frameworks">
+        <li>Angular</li>
+        <li>Vue</li>
+        <li>React</li>
+    </ul>
+    
+
+    <script>console.log("2nd js");
+    
+    var frameworksList = document.getElementById('frameworks');
+    console.log("count at beg"+frameworksList.children.length);
+    var newFramework = document.createElement('li');
+    newFramework.innerText = "Apache Royale";
+    frameworksList.appendChild(newFramework);
+    frameworksList.lastChild.style.color = "crimson";
+    console.log("count at end "+frameworksList.children.length);
+    </script>
+    <h1>JavaScript Execution Order</h1>
+    <p>View the browser console to see the effective order of execution.</p>
+    <script>console.log("3rd js");</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+// myApplicationMarkup.html
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+console.log("Vue was loaded: ", !!Vue)
+// => Vue was loaded: true
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js">
+</script>
+<Script type="text/javascript">
+const exampleArray = [1,5,5,2,6,7,2,1];
+const uniqueArray = _.uniq(exampleArray);
+console.log(uniqueArray);</Script>
+<button id="exampleButton">Click me.</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('#exampleButton').on('click',function(){
+        console.log('hello world')})
+    
+</script>
+<button id="peek">Peek...</button>
+<h1 id="aboo" style="display: none;">...a-boo</h1>
+<script>const peekButton=$('#peek');
+const abooHeadline = $('#aboo');
+peekButton.on('click',function(){
+    abooHeadline.fadeToggle();
+});
+</script>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.9.0/umd/react.
+production.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    const todoListItems = [
+      'buy flowers',
+      'tidy up',
+      'go to the gym'
+    ];
+    const todoListElements = todoListItems.map(item =>
+      React.createElement('li', null, item)
+    );
+    ReactDOM.render(todoListElements, document.getElementById('root'));
+  </script>
+</html>
